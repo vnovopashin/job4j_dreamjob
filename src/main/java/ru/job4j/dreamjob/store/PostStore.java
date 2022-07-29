@@ -1,5 +1,6 @@
 package ru.job4j.dreamjob.store;
 
+import net.jcip.annotations.ThreadSafe;
 import org.springframework.stereotype.Repository;
 import ru.job4j.dreamjob.model.Post;
 
@@ -16,6 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @date 17.07.2022
  */
 
+@ThreadSafe
 @Repository
 public class PostStore {
 
