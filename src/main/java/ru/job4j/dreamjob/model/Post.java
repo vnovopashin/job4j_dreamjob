@@ -15,9 +15,9 @@ public class Post {
     private int id;
     private String name;
     private String description;
-
     private boolean visible;
     private LocalDateTime created = LocalDateTime.now();
+    private City city;
 
     public Post() {
     }
@@ -66,6 +66,14 @@ public class Post {
 
     public void setCreated(LocalDateTime created) {
         this.created = created;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 
     @Override
